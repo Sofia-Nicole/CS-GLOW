@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png?" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="index.js"></script>
+    <title>CS Glow</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="A logo picture." />
+
+          <ul>
+            <li><a href="#about">Despre mine</a></li>
+            <li><a href="#projects">Proiectele mele</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Salutare &#128075;<br />
+            numele meu este Sofia <span>Nicole</span>
+          </h1>
+
+          <audio
+            controls
+            autoplay
+            src="media/welcome-traveler-97167.mp3"
+            id="audio"
+          ></audio>
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/dualdesktop.jpg" alt="Working on computer." />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">Despre mine</h1>
+            <p class="tab">
+                Sunt o fată creativă și îmi place să pun în practică ideile mele
+              sub forma artei tradiționale. 
+                Cu ocazia venirii primăverii doresc
+              să împărtășesc cu voi lucrările mele de Mărțișor !
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('mesaj')">
+                Mesaj
+              </p>
+              <p class="tab-links" onclick="opentab('tematica')">Tematică</p>
+              <p class="tab-links" onclick="opentab('educatie')">Educatie</p>
+            </div>
+            <div class="tab-contents active-tab" id="mesaj">
+              <ul>
+                <li>
+                  <span>Trezirea la viață</span> <br />
+                  Venirea primăverii și înflorirea naturii.
+                </li>
+                <li>
+                  <span>Tradiții</span> <br />
+                  Captarea elementelor tradiționale din folclorul românesc.
+                </li>
+                <li>
+                  <span>Pasiune</span> <br />
+                  Punerea în practică și transmiterea unui obicei strămoșesc.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="tematica">
+              <ul>
+                <li>
+                  <span>Flori</span> <br />
+                  Trandafirul ca semn al iubirii.
+                </li>
+                <li>
+                  <span>Talismane norocoase</span> <br />
+                  Numeroase însemne tradiționale ce aduc noroc.
+                </li>
+                <li>
+                  <span>Personaje din Folcor</span> <br />
+                  Diverse personaje cunoscute din folclorul românesc.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="educatie">
+              <ul>
+                <li>
+                  <span>Cei 7 ani de acasă</span> <br />
+                  Oferiți de mama mea eroină.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--PROJECTS-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Proiectele mele</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Proiect1.jpg" alt="First project." />
+            <div class="layer">
+              <h2>Florile primăverii</h2>
+              <p>
+                Multitudinea de vestitori ai frumuseții naturii.
+              </p>
+              <i class="fa-solid fa-camera fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Proiect2.jpg" alt="First project." />
+            <div class="layer">
+              <h2>Dragostea</h2>
+              <p>
+                Inima fiind un simbol dragostei.
+              </p>
+              <i class="fa-solid fa-camera fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-wrap">
+          <img src="images/back.png" alt="An image of a back sign" id="back-btn" />
+          <div class="gallery">
+            <div>
+              <span
+                ><img src="images/image1.jpg" alt="Image of a handmade work"
+              /></span>
+              <span
+                ><img src="images/image2.jpg" alt="Image of a handmade work"
+              /></span>
+              <span
+                ><img src="images/image3.jpg" alt="Image of a handmade work"
+              /></span>
+            </div>
+            <div>
+              <span
+                ><img src="images/image4.jpg" alt="Image of a handmade work"
+              /></span>
+              <span
+                ><img src="images/image5.jpg" alt="Image of a handmade work"
+              /></span>
+              <span
+                ><img src="images/image6.jpg" alt="Image of a handmade work"
+              /></span>
+            </div>
+            <div>
+              <span
+                ><img src="images/image7.jpg" alt="Image of a handmade work"
+              /></span>
+              <span
+                ><img src="images/image8.jpg" alt="Image of a handmade work"
+              /></span>
+              <span
+                ><img src="images/image9.jpg" alt="Image of a handmade work"
+              /></span>
+            </div>
+          </div>
+          <img src="images/next.png" alt="An icon of a next sign" id="next-btn" />
+        </div>
+    
+        <script src="index.js"></script>
+        <a href="#" class="btn">Înapoi sus</a>
+      </div>
+    </div>
+    <!--CONTACT-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="subtitle">Contact</h3>
+            <p>
+              <i class="fas fa-envelope-open-text"></i>alina.aly2025@gmail.com
+            </p>
+            
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100004555577041"
+                ><i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/nutu.alina?igsh=MTU3MTFmZGp2ZTZjNA=="
+                ><i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </div>
+            <a href="media/LISTĂ PREȚURI MĂRȚIȘOARE.docx" download class="btn btn2"
+              >Download oferte</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Nume" placeholder="Numele tău" required />
+              <input
+                type="email"
+                name="E-mail"
+                placeholder="E-mailul tău"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Mesajul tău pentru mine"
+              ></textarea>
+              <button type="submit" class="btn btn2">Trimite</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright"><p>Copyright © Sofia Nicole Glow</p></div>
+    </div>
+
+    
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxioeE--ZwYj5GAmFfSQGjPijfZYDZL-tCzT44Z_szS_QApTPO3QVFho6Rq5H7662Mj/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+        form.reset();
+      });
+    </script>
+  </body>
+  <script src="index.js"></script>
+</html>
